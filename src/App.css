@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body, html, h1, h2, h3, h4 h5, p, span, textarea, input{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #0f0f10;
+  color: lightgreen;
+
+}
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+input{
+    outline: none;
+    text-overflow:ellipsis
+}
+
+table, tr, td, th{
+    border: 2px solid lightgreen;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 2.5px;
+}
+
+tr:nth-child(even){background-color: #f2f2f222;}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+
+.filebar::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+.filebar{
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    float: none;
+    display: inline-block;
+    zoom: 1;
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
