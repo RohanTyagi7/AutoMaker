@@ -57,3 +57,72 @@ input[type=number] {
 }
 
 html, body {margin: 0; height: 100%; overflow: hidden}
+
+.continueConditional{
+    border: 2px solid lightgreen;
+    background-color: rgba(0,0,0,0);
+    color: lightgreen;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+.continueConditional:hover{
+    background-color: rgba(40,100,40,0.3);
+}
+.continueConditional:active{
+    background-color: rgba(40,100,40,0.6);
+}
+.divertConditional{
+    border: 2px solid lightgreen;
+    background-color: rgba(0,0,0,0);
+    color: lightgreen;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+.divertConditional:hover{
+    background-color: rgba(40,100,40,0.3);
+}
+.divertConditional:active{
+    background-color: rgba(40,100,40,0.6);
+}
+.divertInputConditional{
+    border: 0px;
+    background-color: rgb(68, 60, 60);
+    color: lightgreen;
+    width: 1pc;
+    text-align: center;
+    font-size: 11px;
+}
+.shootConditional{
+    border: 2px solid lightgreen;
+    background-color: rgba(0,0,0,0);
+    color: lightgreen;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+.shootConditional:hover{
+    background-color: rgba(40,100,40,0.3);
+}
+.shootConditional:active{
+    background-color: rgba(40,100,40,0.6);
+}
