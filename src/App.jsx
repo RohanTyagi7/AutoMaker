@@ -386,8 +386,8 @@ export default function App() {
         </tr>
         {trajectories?.map((data)=> {
             if(data.end.x > 0){
-              if(targets[data.id]["delay"] > 0){totalTime += Math.round((distance(data.start.x, data.start.y, data.end.x, data.end.y, data.translation)*2/7.6)*100)/100 + parseFloat(targets[data.id]["delay"]);}
-              else{totalTime += Math.round((distance(data.start.x, data.start.y, data.end.x, data.end.y, data.translation)*2/7.6)*100)/100}
+              if(targets[data.id]["delay"] > 0){totalTime += Math.round((distance(data.start.x, data.start.y, data.end.x, data.end.y, data.translation)*2/3)*100)/100 + parseFloat(targets[data.id]["delay"]);}
+              else{totalTime += Math.round((distance(data.start.x, data.start.y, data.end.x, data.end.y, data.translation)*2/3)*100)/100}
               return(
                 <tr>
                 <td>{Math.round(data.start.x*100)/100 + ", " + Math.round(data.start.y*100)/100}</td>
