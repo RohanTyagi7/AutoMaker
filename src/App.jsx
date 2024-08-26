@@ -403,7 +403,7 @@ export default function App() {
       <br></br>
       <button id="copy" onClick={(e)=>{if(name != ""){document.querySelector("textarea").select();
         document.execCommand('copy');} else{alert("No Auto Name Set");} }} style={{paddingLeft: "15px", paddingRight: "15px", paddingTop: "10px", paddingBottom: "10px", float: "center", border: "2px solid lightgreen", color: "lightgreen", borderRadius: "5px", backgroundColor: "#0f0f10", cursor: "pointer"}}>Copy Code</button>
-      <button id="paste" onClick={(e)=>{wpaste().then(txt =>{document.getElementById("codeOutput").value = txt.txt; displayProg();});}} style={{paddingLeft: "15px", paddingRight: "15px", marginLeft: "15px", float: "center", paddingTop: "10px", paddingBottom: "10px", border: "2px solid lightgreen", color: "lightgreen", borderRadius: "5px", backgroundColor: "#0f0f10", cursor: "pointer"}}>Paste Code</button>
+      <button id="paste" onClick={(e)=>{wpaste().then(txt =>{document.getElementById("codeOutput").value = txt.txt; if(name.length == 0){setName(txt.txt.substring(0,txt.txt.indexOf("JSON")))} displayProg();});}} style={{paddingLeft: "15px", paddingRight: "15px", marginLeft: "15px", float: "center", paddingTop: "10px", paddingBottom: "10px", border: "2px solid lightgreen", color: "lightgreen", borderRadius: "5px", backgroundColor: "#0f0f10", cursor: "pointer"}}>Paste Code</button>
       <br></br><br></br>
       <textarea id="codeOutput" cols="0" rows="0" onChange={(e)=>{displayProg();}} style={{resize: "none", height: "0px", width: "0px", color: "rgba(0,0,0,0)", border: "0px", overflow: "hidden"}}></textarea>
       </center>
