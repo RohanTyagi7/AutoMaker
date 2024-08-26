@@ -150,8 +150,8 @@ export default function App() {
   }, [targets, seed, name])
 
   useEffect(()=> {
-    document.getElementById("codeOutput").value = `${name}Trajectories =  ${JSON.stringify(targets)}
-        self.auton_selector.setDefaultOption("${name}", autoRunner(self.s_Swerve, self.s_Intake, self.s_Indexer, self.s_Shooter, self.s_Arm, self.s_Vision, ${name}Trajectories).getCommand())`
+    document.getElementById("codeOutput").value = `${name}JSON =  ${JSON.stringify(targets)}
+        self.auton_selector.setDefaultOption("${name}", autoRunner(self.s_Swerve, self.s_Intake, self.s_Indexer, self.s_Shooter, self.s_Arm, self.s_Vision, ${name}JSON).getCommand())`
     //console.log(targets)
   }, [seed, seed2, targets, trajectories, name])
 
