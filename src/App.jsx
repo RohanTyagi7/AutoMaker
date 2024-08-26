@@ -386,14 +386,14 @@ export default function App() {
         </tr>
         {trajectories?.map((data)=> {
             if(data.end.x > 0){
-              if(targets[data.id]["delay"] > 0){totalTime += Math.round((distance(data.start.x, data.start.y, data.end.x, data.end.y, data.translation)*2/3)*100)/100 + parseFloat(targets[data.id]["delay"]);}
-              else{totalTime += Math.round((distance(data.start.x, data.start.y, data.end.x, data.end.y, data.translation)*2/3)*100)/100}
+              if(targets[data.id]["delay"] > 0){totalTime += Math.round((distance(data.start.x, data.start.y, data.end.x, data.end.y, data.translation)/1.5)*100)/100 + parseFloat(targets[data.id]["delay"]);}
+              else{totalTime += Math.round((distance(data.start.x, data.start.y, data.end.x, data.end.y, data.translation)/1.5)*100)/100}
               return(
                 <tr>
                 <td>{Math.round(data.start.x*100)/100 + ", " + Math.round(data.start.y*100)/100}</td>
                 <td>{Math.round(data.end.x*100)/100 + ", " + Math.round(data.end.y*100)/100}</td>
                 <td><input id={"delay" + data.id} type="number" min="0" style={{width: "50px", border: "0px", color: "lightgreen", textAlign: "center", backgroundColor: "rgba(0,0,0,0)", fontSize: "15px"}} onChange={(e)=> {targets[data.id]["delay"] = document.getElementById("delay" + data.id).value;}} placeholder={targets[data.id]["delay"]}></input></td>
-                <td>{Math.round((distance(data.start.x, data.start.y, data.end.x, data.end.y, data.translation)*2/7.6)*100)/100}</td>
+                <td>{Math.round((distance(data.start.x, data.start.y, data.end.x, data.end.y, data.translation)/1.5)*100)/100}</td>
               </tr>
               )
             }
