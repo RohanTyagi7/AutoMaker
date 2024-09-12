@@ -151,7 +151,7 @@ export default function App() {
 
   useEffect(()=> {
     document.getElementById("codeOutput").value = `${name.replaceAll("-", "").replaceAll(".", "").replaceAll(",", "").replaceAll("/", "").replaceAll("\\", "").replaceAll("\"", "").replaceAll("\'", "").replaceAll(" ", "")}JSON =  ${JSON.stringify(targets)}
-        self.auton_selector.setDefaultOption("${name}", autoRunner(self.s_Swerve, self.s_Intake, self.s_Indexer, self.s_Shooter, self.s_Arm, self.s_Vision, ${name.replaceAll("-", "").replaceAll(".", "").replaceAll(",", "").replaceAll("/", "").replaceAll("\\", "").replaceAll("\"", "").replaceAll("\'", "").replaceAll(" ", "")}JSON).getCommand())`
+        self.auton_selector.addOption("${name}", autoRunner(self.s_Swerve, self.s_Intake, self.s_Indexer, self.s_Shooter, self.s_Arm, self.s_Vision, ${name.replaceAll("-", "").replaceAll(".", "").replaceAll(",", "").replaceAll("/", "").replaceAll("\\", "").replaceAll("\"", "").replaceAll("\'", "").replaceAll(" ", "")}JSON).getCommand())`
     //console.log(targets)
   }, [seed, seed2, targets, trajectories, name])
 
